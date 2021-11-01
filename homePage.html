@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;400;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <section>
+      <header>
+        <a href="#"><img src="images/logo.png" class="logo" alt="" /></a>
+        <ul>
+          <li><a href="homePage.html"> Home</a></li>
+          <li><a href="#"> Menu</a></li>
+          <li><a href="#"> What's New</a></li>
+          <li><a href="contact.html"> Contact</a></li>
+          
+          <!-- drop down btn experiment -->
+          <div class="dropdown">
+            <button class="dropbtn" style="padding-top: 0px;padding-right: 40px;padding-left: 40px;padding-bottom: 5px">Locations 
+              <i class="fa fa-caret-down"></i>
+            </button>
+            <div class="dropdown-content">
+              <a href="#">Hà Nội</a>
+              <a href="#">Đà Nẵng</a>
+              <a href="#">Sài Gòn</a>
+            </div>
+          </div>
+        </ul>
+      </header>
+      <div class="circle"></div>
+      <div class="content">
+        <div class="textBox" >
+      <h2>
+        Không Chỉ Cà Phê <br />
+        Đó là <span>Starbucks<span>
+      </h2>
+     
+      <p>
+        Starbucks Corp is a roaster, marketer and retailer of specialty coffee
+        with operations in approximately 83 markets around the world. ...
+        Channel Development segment is engaged in sale of packaged coffee, tea
+        and ready-to-drink beverages to customers outside of its
+        Company-operated and licensed stores.
+      </p>
+      <a href="#">Đọc Thêm</a>
+      </div>
+      <div class="imgBox">
+        <img src="images/img1.png" class = "starbucks" alt="">
+      </div>
+      </div>
+      <div class="thumb">
+      <ul>
+        <li><img class="thumbPic" src="images/thumb1.png" onclick="imgSlider('images/img1.png');changeColor('#017143')"></li>
+        <li><img class="thumbPic" src="images/thumb2.png" onclick="imgSlider('images/img2.png');changeColor('#eb7495')"></li>
+        <li><img class="thumbPic" src="images/thumb3.png" onclick="imgSlider('images/img3.png');changeColor('#d752b1')"></li>
+      </ul>
+    </div>
+    <ul class="sci">
+      <li><a href="#""> <img src="images/facebook.png" alt=""></a></li>
+      <li><a href="#""> <img src="images/twitter.png" alt=""></a></li>
+      <li><a href="#""> <img src="images/instagram.png" alt=""></a></li>
+
+    </ul>
+      </section>
+
+      <script type="text/javascript" >
+        function imgSlider (anything) {
+          document.querySelector(".starbucks").src = anything;
+       
+        }
+        
+        function changeColor(color) {
+          const circle = document.querySelector(".circle")
+          circle.style.background = color
+        }
+
+   
+
+      </script>
+  </body>
+</html>
